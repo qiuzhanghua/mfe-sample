@@ -3,16 +3,16 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
- 
+
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-  input: "src/tj-navbar.js",
+  input: "src/tj-settings.js",
   output: {
     sourcemap: true,
     format: "system",
     name: null, // ensure anonymous System.register
-    file: "dist/tj-navbar.js",
+    file: "dist/tj-settings.js",
   },
   plugins: [
     svelte({
